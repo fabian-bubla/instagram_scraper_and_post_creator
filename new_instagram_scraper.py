@@ -22,98 +22,24 @@ print(''' INFORMATION:
     To stop pyperclip and run the rest of the programme run keyboard interrupt with CTRL-C'''
     )
 print ('Choose account:')
-print('discoversouthkorea, styriaisbeautiful, rdam_streets...')
+print('account_name_1,account_name2')
 choose_account = input('Enter now: ')
 
 csv_file = open(choose_account + '.csv', 'w+', newline='', encoding='utf-8-sig')
 csv_writer =csv.writer(csv_file)
-if choose_account == 'discoversouthkorea':
-      tags = '''#southkorea 
-#seoul 
-#visitkorea
-#imagineyourkorea 
-#ëŒ€í•œë¯¼êµ­ 
-#korea 
-#ig_korea 
-#travelkorea 
-#seoul_korea 
-#í•œêµ­ 
-#instakorea 
-#explorekorea 
-#kdrama 
-#iseoulu 
-#discover 
-#tourism 
-#visiting 
-#instago 
-#instapassport 
-#instatraveling 
-#travelingram 
-#mytravelgram 
-#travelling 
-#tourist 
-#igtravel 
-#traveler 
-#traveller 
-#outdoors'''
-if choose_account == 'styriaisbeautiful':
-      tags = '''#styria
-#austria
-#vienna
-#Ã¶sterreich
-#wien
-#igersaustria
-#discoveraustria
-#tourist
-#travelling
-#tourism
-#visiting
-#igtravel
-#holidays
-#turismo
-#vacaciones
-#vacations
-#touris
-#autriche
-#Ã–sterreich
-#nature
-#paradise
-#scenery
-#interrail
-#eurotrip
-#beautiful
-#instatravel'''
-if choose_account == 'rdam_streets':
-      tags = '''#rotterdam
-#roffa 
-#igersrotterdam
-#igrotterdam
-#holland 
-#rotturban
-#010
-#rottergram010
-#modern 
-#rotterdamcity
-#rotturban
-#netherlands
-#rottergram
-#visitholland
-#visitrotterdam
-#loverotterdam
-#dutch
-#lookingup
-#architecture
-#urbanart
-#building
-#erasmusbrug
-#urbanexploration 
-#urbanphotography 
-#travel
-#holiday
-#traveltheworld
+if choose_account == 'account_name_1':
+      tags = '''#example 1
+example 2
+example 3'''
+if choose_account == 'account_name_2':
+      tags = '''#example1
+#example2
+#example3
 '''
+        
 #getting the picture urls in urls list
-print('pyperclip activated (press CTRL-C to finish pyperclip)')
+print('pyperclip activated', 'select posts to download by right-clicking them in chrome and then pressing \'E\' this copies the link to the post to your clipboard,
+     'press CTRL-C to finish pyperclip and start downloading')
 #%%
 urls = []
 pyperclip.copy('filler to delete')
