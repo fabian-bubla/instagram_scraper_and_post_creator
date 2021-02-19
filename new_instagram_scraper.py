@@ -3,8 +3,6 @@
 instagram scraper
 Created on Mon Jul 23 15:08:10 2018
 
-@author: fabia
-
 """
 import requests, bs4, csv, time
 import selenium
@@ -107,7 +105,7 @@ for url in urls:
         pass
     
     pic_file_name =  name + str(random.randint(1,100000)) + '.jpg'
-    path = (r'C:\\Users\\Administrator\\Documents\\Follow Liker\\Share\\'+choose_account +r'\\' + pic_file_name )
+    path = (r'C:\\Users\\User\\'+choose_account +r'\\' + pic_file_name ) #replace with custom path
 
     value_list.append(quote)
     value_list.append(tags)
